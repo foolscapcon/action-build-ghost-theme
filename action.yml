@@ -1,0 +1,14 @@
+name: 'Build Ghost Theme'
+author: 'Douglas Beal <git@dougbeal.com>'
+outputs:
+  release_file:
+    description: 'theme zip filename'
+  release_name:
+    description: 'theme filename sans extension'
+  release_tag:
+    description: 'theme release tag'
+using: 'docker'
+image: 'Dockerfile'
+branding:
+  icon:  'folder'
+  color: 'purple'
