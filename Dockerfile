@@ -13,4 +13,4 @@ RUN apk --no-cache add jq zip
 
 COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
