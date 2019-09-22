@@ -7,8 +7,9 @@ outputs:
     description: 'theme filename sans extension'
   release_tag:
     description: 'theme release tag'
-using: 'docker'
-image: 'Dockerfile'
+runs:    
+  using: 'docker'
+  image: 'Dockerfile'
 branding:
   icon:  'folder'
   color: 'purple'
