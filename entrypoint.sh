@@ -8,7 +8,8 @@ mkdir -p "${working}"
 if [ -e $target ]; then
     rm $target
 fi
-zip $target -r * -x \*${working}\* -x \*.git\* -x \*~
+zip "$target" -r * -x \*${working}\* -x \*.git\* -x \*~
+stat "$target"
 # https://github.com/actions/toolkit/blob/2c6d31be8f9c8201d3cc9384133b933543b69075/docs/commands.md
 echo ::set-output name=release_file::"${target}"
 echo ::set-output name=release_name::"${name}"
