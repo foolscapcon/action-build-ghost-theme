@@ -9,7 +9,7 @@ if [ -e $target ]; then
     rm $target
 fi
 zip $target -r * -x \*${working}\* -x \*.git\* -x \*~
-echo ::set-output name=file::"${file}"
+echo ::set-output name=file::"${target}"
 echo ::set-output name=name::"${name}"
 echo ::set-output name=tag::"${tag}"
 
