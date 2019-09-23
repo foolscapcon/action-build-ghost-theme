@@ -9,7 +9,7 @@ if [ -e $target ]; then
     rm $target
 fi
 zip $target -r * -x \*${working}\* -x \*.git\* -x \*~
-export RELEASE_FILE="$target"
-export RELEASE_NAME="$name"
-export RELEASE_TAG="$tag"
+echo ::set-output name=file::"${file}"
+echo ::set-output name=name::"${name}"
+echo ::set-output name=tag::"${tag}"
 
