@@ -12,5 +12,5 @@ LABEL "maintainer"="Douglas Beal <public@dougbeal.com>"
 RUN apk --no-cache add jq zip
 
 COPY entrypoint.sh /entrypoint.sh
-
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
