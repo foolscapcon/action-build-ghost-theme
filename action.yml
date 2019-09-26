@@ -1,5 +1,6 @@
 name: 'Build Ghost Theme'
 author: 'Douglas Beal <git@dougbeal.com>'
+description: 'Build a Ghost Theme to a .zip filename based on version pulled from package.json'
 outputs:
   release_file:
     description: 'theme zip filename'
